@@ -37,3 +37,9 @@ after 'deploy:finalize_update', :roles => :app do
   run "rm -f #{current_release}/config/database.yml"
   run "ln -s #{current_release}/config/database.yml.example #{current_release}/config/database.yml"
 end
+
+namespace :deploy do
+  task :init_vhost do
+    run "ln -s #{deploy_to}/current/config/#{application}.vhost /etc/nginx/sites-enabled/#{application}"
+  end
+end
