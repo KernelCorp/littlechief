@@ -1,6 +1,6 @@
 require 'rvm/capistrano' # Для работы rvm
 require 'bundler/capistrano' # Для работы bundler. При изменении гемов bundler автоматически обновит все гемы на сервере, чтобы они в точности соответствовали гемам разработчика.
-
+require 'puma/capistrano'
 
 
 set :application, "littlechief"
@@ -37,9 +37,3 @@ after 'deploy:finalize_update', :roles => :app do
   run "rm -f #{current_release}/config/database.yml"
   run "ln -s #{current_release}/config/database.yml.example #{current_release}/config/database.yml"
 end
-
-after "deploy:start",          "puma:start"
-after "deploy:stop",           "puma:stop"
-after "deploy:restart",        "puma:restart"
-after "deploy:create_symlink", "puma:after_symlink"
-

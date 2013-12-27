@@ -44,7 +44,6 @@ gem 'russian'
 group :development do
   gem 'capistrano', '<3.0.0'
   gem 'rvm-capistrano'
-  gem 'capistrano-puma'
 end
 
 gem 'puma'
