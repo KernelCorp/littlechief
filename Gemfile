@@ -31,9 +31,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'rails-i18n'
+gem 'russian'
 
+# Use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.1.2' 
+   
 # Use unicorn as the app server
 # gem 'unicorn'
 
@@ -50,5 +53,6 @@ gem 'puma'
 # gem 'debugger', group: [:development, :test]
 
 gem 'spree', '2.1.3'
+gem 'spree_i18n', :git => 'https://github.com/spree/spree_i18n.git', :branch => '2-1-stable'
 gem 'spree_gateway', :git => 'https://github.com/spree/spree_gateway.git', :branch => '2-1-stable'
 gem 'spree_auth_devise', :git => 'https://github.com/spree/spree_auth_devise.git', :branch => '2-1-stable'
