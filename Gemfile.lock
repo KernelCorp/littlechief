@@ -20,6 +20,16 @@ GIT
       savon (~> 1.2)
       spree_core (~> 2.1)
 
+GIT
+  remote: https://github.com/spree/spree_i18n.git
+  revision: d10d63412f82d950860dcdbde68763f886033aed
+  branch: 2-1-stable
+  specs:
+    spree_i18n (3.0.0)
+      globalize (~> 4.0.0.alpha.3)
+      rails-i18n (~> 0.7.3)
+      spree_core (~> 2.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -110,6 +120,10 @@ GEM
     erubis (2.7.0)
     execjs (2.0.2)
     ffaker (1.22.1)
+    globalize (4.0.0.alpha.3)
+      activemodel (>= 4.0.0)
+      activerecord (>= 4.0.0)
+      paper_trail (~> 3.0.0.beta)
     gyoku (0.4.6)
       builder (>= 2.1.2)
     highline (1.6.20)
@@ -155,6 +169,9 @@ GEM
       mini_portile (~> 0.5.0)
     nori (1.1.5)
     orm_adapter (0.5.0)
+    paper_trail (3.0.0)
+      activerecord (>= 3.0, < 5.0)
+      activesupport (>= 3.0, < 5.0)
     paperclip (3.4.2)
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
@@ -181,6 +198,8 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.0.1)
       sprockets-rails (~> 2.0.0)
+    rails-i18n (0.7.4)
+      i18n (~> 0.5)
     railties (4.0.1)
       actionpack (= 4.0.1)
       activesupport (= 4.0.1)
@@ -194,6 +213,8 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     ref (1.0.5)
+    russian (0.6.0)
+      i18n (>= 0.5.0)
     rvm-capistrano (1.5.1)
       capistrano (~> 2.15.4)
     sass (3.2.13)
@@ -314,12 +335,15 @@ DEPENDENCIES
   mysql2
   puma
   rails (= 4.0.1)
+  rails-i18n
+  russian
   rvm-capistrano
   sass-rails (~> 4.0.0)
   sdoc
   spree (= 2.1.3)
   spree_auth_devise!
   spree_gateway!
+  spree_i18n!
   therubyracer
   turbolinks
   uglifier (>= 1.3.0)
