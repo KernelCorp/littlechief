@@ -5,6 +5,8 @@ gem 'rails', '4.0.1'
 
 gem 'mysql2'
 
+gem 'activemerchant', :require => 'active_merchant'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
