@@ -34,7 +34,6 @@ group :doc do
 end
 
 gem 'rails-i18n'
-gem 'russian'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2' 
