@@ -7,6 +7,25 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/Gemfile",
+			"settings":
+			{
+				"buffer_size": 1288,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "- @body_id = 'signup'\n\n= render partial: 'spree/shared/error_messages', locals: { target: @user }\n\n#new-customer\n  h6= Spree.t(:new_customer)\n\n  div data-hook='signup'\n    = form_for resource, as: :spree_user, url: spree.registration_path(@user) do |f|\n      div data-hook='signup_inside_form'\n        = render partial: 'spree/shared/user_form', locals: { f: f }\n        p\n          = f.check_box :remember_me\n          = f.label :remember_me, Spree.t(:remember_me)\n        p = f.submit Spree.t(:create), :class => 'button primary'\n    \n    = Spree.t(:or)\n    = link_to Spree.t(:login_as_existing), spree.login_path\n\n  | asdasdsad\n    sadasd <df> asd </df>\n\ndiv data-hook='login_extras'\n",
+			"file": "/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/views/spree/user_registrations/new.slim",
+			"file_size": 646,
+			"file_write_time": 130337343210000000,
+			"settings":
+			{
+				"buffer_size": 687,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -56,20 +75,35 @@
 	},
 	"file_history":
 	[
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/views/spree/user_registrations/new.html.erb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/views/spree/user_registrations/new.slim",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/views/spree/user_sessions/new.html.erb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/config/initializers/devise.rb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/models/spree/order_decorator.rb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/db/migrate/20131223125648_create_users.spree_auth.rb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/config/initializers/spree.rb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/models/spree/ability_decorator.rb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/models/spree/app_configuration.rb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/config/routes.rb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/controllers/robokassa_controller.rb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/models/spree/gateway/robokassa.rb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/config/application.rb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/config/initializers/robokassa_config.rb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/models/payment.rb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/config/initializers/activemerchant.rb",
+		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/Gemfile",
 		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/config/database.yml",
 		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/.gitignore",
 		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/assets/stylesheets/application.css",
 		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/assets/stylesheets/common/first.styl",
-		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/Gemfile",
 		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/assets/stylesheets/store/fist.styl",
 		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/assets/stylesheets/application.styl",
-		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/config/application.rb",
 		"/Users/Vonagam/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
 		"/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/config/locales/ru.yml"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -102,8 +136,67 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/Gemfile",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1186,
+								1203
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/Vonagam/Documents/ruby/rails/KernelCorp/littlechief/app/views/spree/user_registrations/new.slim",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 687,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								643,
+								645
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Slim.tmbundle/Syntaxes/Slim.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -158,11 +251,15 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"~/Documents/ruby/rails/KernelCorp/vote/public/system/vote.sublime-project"
+			]
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"select_symbol":
 	{
@@ -179,7 +276,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 252.0,
+	"side_bar_width": 610.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
