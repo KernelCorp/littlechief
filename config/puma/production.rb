@@ -1,5 +1,9 @@
+app_path = '/var/www/littlechief'
 threads 1, 8
 workers 2
+environment 'production'
+pidfile "#{app_path}/shared/pids/puma.pid"
+bind "unix://#{app_path}/shared/sockets/puma.sock"
 
 on_worker_boot do
   require "active_record"
